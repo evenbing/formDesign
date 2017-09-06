@@ -1,0 +1,425 @@
+#formDesign{
+	-moz-user-select:none;-webkit-user-select:none;
+}
+#formDesign>.headTool{
+	height:60px;
+	width:100%;
+	background:rgb(66,90,117);
+	position: relative;
+	padding:17px 0;
+}
+#formDesign>.headTool .back{
+	height:100%;
+	width:270px;
+	border-right:1px solid rgb(92,119,150);
+	padding:0 17px;
+	font-size: 16px;
+	color:rgb(202,205,217);
+	line-height: 26px;
+	cursor: pointer;
+}
+#formDesign>.headTool .title{
+	position: absolute;
+	top:0;
+	left:270px;
+	right:0;
+	bottom:0;
+}
+#formDesign>.headTool .title .left{
+	position: absolute;
+	top:0;
+	left:0;
+	right:300px;
+	bottom:0;
+	color:#FFF;
+	font-size:16px;
+	letter-spacing: 2px;
+	line-height: 60px;
+	padding:0 17px;
+}
+#formDesign>.headTool .title .right{
+	float:right;
+	width:300px;
+	height:100%;
+	padding:0 17px;
+}
+#formDesign>.headTool .title .right ul li{
+	float:left;
+	color: rgb(47,195,145);
+	font-size: 16px;
+	line-height: 60px;
+	margin-right:30px;
+	cursor: pointer;
+}
+#formDesign>.headTool .title .right ul li span{
+	margin-right:8px;
+}
+#formDesign>.body{
+	position: absolute;
+	top:60px;
+	left:0;
+	right:0;
+	bottom:0;
+}
+#formDesign>.body .component{
+	width:270px;
+	height:100%;
+	position: relative;
+	border-right:1px solid rgb(201,201,201);
+}
+#formDesign>.body .component .title{
+	height:40px;
+	width:100%;
+	background-color:rgb(247,246,246);
+}
+#formDesign>.body .component .title>ul{
+	margin-bottom: 0;
+	height:100%;
+	width:90%;
+	margin:0 5%;
+}
+#formDesign>.body .component .title>ul li{
+	float:left;
+	text-align: center;
+	font-size: 20px;
+	height:100%;
+	width:20%;
+	line-height: 40px;
+	cursor: pointer;
+	color:rgb(85,85,85)
+}
+#formDesign>.body .component .title>ul li:hover{
+	color:rgb(47,195,145)
+}
+#formDesign>.body .component .head{
+	height:60px;
+	width:100%;
+	background-color: rgb(156,189,218);
+}
+#formDesign>.body .component .head>ul{
+	height:100%;
+	width:100%;
+	border:none;
+	padding:0 10px;
+}
+#formDesign>.body .component .head>ul>li{
+	height:100%;
+	width:33.3%;
+	padding:14px 10px 0 10px;
+	border:none;
+}
+#formDesign>.body .component .head>ul>li>a{
+	height:100%;
+	width:100%;
+	border:none;
+	border-radius: 0;
+	padding:8px 21px;
+	text-align:center
+}
+#formDesign>.body .component .head>ul>li>a>span{
+	font-size:18px;
+	color:rgb(218,229,243)
+}
+#formDesign>.body .component .head>ul>li.active>a,#formDesign>.body .component .head>ul>li>a:hover{
+	background-color:#FFF;
+}
+#formDesign>.body .component .head>ul>li.active>a>span{
+	color:rgb(47,195,145)
+}
+#formDesign>.body .component .content{
+	position: absolute;
+	top:100px;
+	left:0;
+	right:0;
+	bottom:0;
+	overflow: auto;
+	background-color: rgb(246,246,246);
+}
+#formDesign>.body .component .content .panel-group{
+	margin-bottom:0;
+}
+#formDesign>.body .component .content .panel-group .panel{
+	border:none;
+	border-radius: 0;
+	box-shadow: none;
+	background-color: transparent;
+}
+#formDesign>.body .component .content .panel-default > .panel-heading{
+	border:none;
+	border-bottom:1px solid #ccc;
+	padding:12px 0;
+	margin:0 20px;
+}
+#formDesign>.body .component .content .panel-default > .panel-heading a:hover,#formDesign>.body .component .content .panel-default > .panel-heading a:focus{
+	text-decoration: none;
+}
+#formDesign>.body .component .content .panel-group .panel-heading + .panel-collapse{
+	background-color: rgb(246,246,246);
+}
+#formDesign>.body .component .content .panel-group .panel-heading + .panel-collapse > .panel-body{
+	border:none;
+	padding:0;
+}
+#formDesign>.body .component .content .panel-group .panel-heading + .panel-collapse > .panel-body > div{
+	height:60px;
+	width:50%;
+	padding:12px 13px;
+	border:1px dashed transparent;
+	float:left;
+	cursor:pointer;
+}
+#formDesign>.body .component .content .panel-group .panel-heading + .panel-collapse > .panel-body > div:hover{
+	border-color:rgb(241,145,73);
+	background-color:rgb(249,232,212);
+}
+#formDesign>.body .component .content .panel-group .panel-heading + .panel-collapse > .panel-body > div > a{
+	display: block;
+	height:100%;
+	width:100%;
+	border:1px solid rgb(191,191,191);
+	text-align: center;
+	line-height:32px;
+	color:rgb(102,102,102);
+	background-color: #FFF;
+}
+#formDesign>.body .component .content .panel-group .panel-heading + .panel-collapse > .panel-body > div > a:hover{
+	text-decoration: none;
+}
+#formDesign>.body .footer{
+	position: absolute;
+	height:40px;
+	left:270px;
+	right:0;
+	bottom:0;
+	background-color: rgb(66,90,117);
+}
+#formDesign>.body .footer ul li{
+	float: left;
+	width:120px;
+	color:#FFF;
+	padding:10px 0;
+	text-align: center;
+	border-right: 1px solid rgb(122,137,194);
+	cursor: pointer;
+}
+#formDesign>.body .footer ul li.active{
+	background-color: rgb(47,195,145);
+}
+#formDesign>.body .view{
+	position: absolute;
+	top:0;
+	left:270px;
+	right:0;
+	bottom:40px;
+	background-color: #FFF;
+}
+#formDesign>.body .html{
+	position: absolute;
+	top:0;
+	left:270px;
+	right:0;
+	bottom:40px;
+	background-color: #FFF;
+	padding:20px 30px;
+	background-image: url("./bg.png");
+}
+#formDesign>.body .javascript{
+	position: absolute;
+	top:0;
+	left:270px;
+	right:0;
+	bottom:40px;
+	background-color: #FFF;
+	padding:20px 30px;
+	background-image: url("./bg.png");
+}
+#formDesign>.body .html .CodeMirror,
+#formDesign>.body .javascript .CodeMirror,
+#formDesign>.body .html .CodeMirror .CodeMirror-scroll,
+#formDesign>.body .javascript .CodeMirror .CodeMirror-scroll{
+	height:100%;
+	width:100%
+}
+#formDesign>.body>.view>.topRuler{
+	height:26px;
+	width:100%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+#formDesign>.body>.view>.topRuler>ul{
+	padding-left:25px;
+	height:100%;
+	border-top:1px solid rgb(191,191,191);
+	border-bottom:1px solid rgb(191,191,191);
+	background-color: rgb(247,246,246);
+}
+#formDesign>.body>.view>.topRuler>ul>li{
+	height:100%;
+	width:100px;
+	float:left;
+	border-left:1px solid rgb(191,191,191)
+}
+#formDesign>.body>.view>.topRuler>ul>li:first-of-type{
+	border:none
+}
+#formDesign>.body>.view>.topRuler>ul>li .dot{
+	height:100%;
+	width:100%;
+	padding-top:18px;
+	position: relative;
+}
+#formDesign>.body>.view>.topRuler>ul>li .dot span{
+	position: absolute;
+	top:2px;
+	left:4px;
+	color:rgb(125,125,125);
+	font-size: 10px;
+}
+#formDesign>.body>.view>.topRuler>ul>li .dot>li{
+	height:7px;
+	width:20px;
+	float:left;
+	border-right:1px solid rgb(191,191,191)
+}
+#formDesign>.body>.view>.topRulerDash{
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:1px;
+	border:1px dashed rgb(191,191,191);
+}
+
+
+#formDesign>.body>.view>.leftRuler{
+	width:25px;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+#formDesign>.body>.view>.leftRuler>ul{
+	padding-top:24px;
+	width:100%;
+	border-right:1px solid rgb(191,191,191);
+	border-top:1px solid rgb(191,191,191);
+	background-color: rgb(247,246,246);
+}
+#formDesign>.body>.view>.leftRuler>ul>li{
+	width:100%;
+	height:100px;
+	border-top:1px solid rgb(191,191,191)
+}
+#formDesign>.body>.view>.leftRuler>ul>li .dot{
+	height:100%;
+	width:100%;
+	padding-left:18px;
+	position: relative;
+}
+#formDesign>.body>.view>.leftRuler>ul>li .dot span{
+	position: absolute;
+	top:2px;
+	right:2px;
+	color:rgb(125,125,125);
+	font-size: 10px;
+}
+#formDesign>.body>.view>.leftRuler>ul>li .dot>li{
+	width:7px;
+	height:20px;
+	border-bottom:1px solid rgb(191,191,191)
+}
+#formDesign>.body>.view>.leftRulerDash{
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	width:1px;
+	height:100%;
+	border:1px dashed rgb(191,191,191);
+}
+#formDesign>.body>.view>.workArea{
+	position: absolute;
+	top:26px;
+	left:25px;
+	right:0;
+	bottom:0;
+	overflow: auto;
+	background-image: url("./bg.png");
+}
+#formDesign>.body>.view>.workArea>.workInner{
+	position: absolute;
+	top:20px;
+	left:20px;
+	width:0;
+	height:0;
+	background-color: #FFF;
+}
+
+#formDesign>.body>.view>.workArea>.workInner .workInnerResize {
+	position: absolute;
+	bottom: 0;
+	right: 0px;
+	width: 20px;
+	cursor: nw-resize;
+	z-index: 2;
+}
+#formDesign>.body>.view>.workArea>.workInner .workInnerResize .resizeIcon {
+	width: 0;
+	height: 0;
+	border-bottom: 14px solid #999;
+	border-left: 14px solid transparent;
+	position: relative;
+	top: -13px;
+	right: -7px;
+}
+#formDesign>.body>.view>.workArea>.workInner .work{
+	position: absolute;
+	left: 0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+#formDesign>.body>.view>.workArea>.workInner .work .nodes{
+	border:2px dashed transparent;
+}
+#formDesign>.body>.view>.workArea>.workInner .work .nodes.active{
+	border-color:rgb(156,189,218)
+}
+#formDesign>.body>.view>.workArea>.workInner .work .nodes .delete{
+	position: absolute;
+	top:-8px;
+	right:0px;
+	height:6px;
+	width:6px;
+	cursor: pointer;
+}
+#formDesign>.body>.view>.workArea>.workInner .work .nodes .delete span{
+	font-size: 18px;
+	left:-2px
+}
+#formDesign > .body > .view > .workArea > .workInner .work .nodes .resize {
+	position: absolute;
+	bottom: 0;
+	right: 0px;
+	width: 20px;
+	cursor: nw-resize;
+}
+#formDesign > .body > .view > .workArea > .workInner .work .nodes .resize .resizeIcon {
+	width: 0;
+	height: 0;
+	border-bottom: 14px solid #999;
+	border-left: 14px solid transparent;
+	position: relative;
+	top: -11px;
+	right: -8px;
+}
+#formDesign>.body .shadow{
+	position: fixed;
+	display: none;
+	top:0;
+	left:0;
+	border:2px dashed transparent;
+	z-index: 2;
+}

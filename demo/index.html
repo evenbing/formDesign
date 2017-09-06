@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="libs/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="libs/bootstrap/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap/bootstrap.min.css"/>
+		
+		<script src="libs/codemirror/codemirror.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="libs/codemirror/codemirror.css"/>
+		<script src="libs/codemirror/javascript.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/codemirror/xml.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="libs/formDesign/formDesign.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="libs/formDesign/style.css"/>
+		<style type="text/css">
+			body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+			body {color:#414a59; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif;
+				overflow-x: hidden;
+				}
+				label{
+				font:400 14px "microsoft yahei";
+				font-weight:400}
+			td,th,caption { font-size:14px; }
+			h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+			address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+			a { color:#555; text-decoration:none; }
+			a:hover { text-decoration:none; }
+			a:focus{outline: none;text-decoration:none;}
+			img { border:none; }
+			ol,ul,li { list-style:none; }
+			input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+			table { border-collapse:collapse;table-layout:fixed;white-space: nowrap;}
+			td{overflow: hidden;text-overflow: ellipsis;}
+			html {overflow: hidden;}
+			.demo{
+				position: fixed;
+				top:0;
+				bottom:0;
+				left: 0;
+				right:0
+			}
+		</style>
+	</head>
+	<body>
+		<div class="demo">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		let option = {
+			title: "表单设计器",
+			html: "",
+			javascript: "",
+			height: 1366,
+			width: 768
+		}
+		let fd = new FormDesign($(".demo"),option)
+		fd.callback = {
+			onSaveClick : (data) => {
+				
+			},
+			onCloseClick : () => {
+			
+			}
+		}
+		fd.init()
+	</script>
+</html>
